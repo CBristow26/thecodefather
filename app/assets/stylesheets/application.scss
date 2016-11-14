@@ -63,14 +63,19 @@ BuilderPreviewHTMLCSS
     font-size: 18px;
 }
 .youtube {
-    padding-left: 800px;
+    float: right;
     margin-top: -240px;
+    padding-right: 400px;
 }
 .twitter {
+    float: right;
     margin-top: -240px;
+    padding-right: 180px;
 }
 .facebook {
+    float: right;
     margin-top: -240px;
+
 }
 
 /* Line Dividers */
