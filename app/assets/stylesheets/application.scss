@@ -1,0 +1,104 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Beginning Of Navigation Bar */
+BuilderPreviewHTMLCSS
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(0, 0, 0, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    background: -webkit-linear-gradient(top, rgba(219, 219, 219, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(219, 219, 219, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+} /* End Of Navigation Bar */
+
+/* Banner Image */
+.banner {
+    height: 500px;
+    background:no-repeat center center fixed;
+    background-size: cover;
+    margin-top: -25px;
+}
+
+/* Content Header */
+.contentt {
+    padding-top: 30px;
+    padding-left: 190px;
+}
+.contentp {
+    padding-left: 130px;
+    padding-right: 700px;
+    font-size: 18px;
+}
+.youtube {
+    padding-left: 700px;
+    margin-top: -240px;
+}
+.twitter {
+    margin-top: -240px;
+}
+.facebook {
+    margin-top: -240px;
+}
+
+/* Line Dividers */
+.border-separator {
+    height: 400px;
+    width: 100%;
+    background-color: #02e1ff;
+    border: 2px solid white;
+    color: #fff;
+}
+.border-separator2 {
+    height: 400px;
+    width: 100%;
+    background-color: #white;
+    border: 2px solid white;
+    color: #fff;
+}
+
+/* First Divider Section*/
+.videosimac {
+    margin-top: -320px;
+}
+.videostitle {
+    padding-top: 65px;
+    padding-left: 900px;
+    font-size: 40px;
+}
+.videoscontent {
+    padding-left: 870px;
+    font-size: 20px;
+}
