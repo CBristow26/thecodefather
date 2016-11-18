@@ -105,7 +105,7 @@ li {
 
 section {
 
-  margin: 80px auto 40px;
+  /* margin: 80px auto 40px; */
   max-width: 100%;
   position: relative;
   padding: 20px
@@ -236,8 +236,19 @@ Pseudo ::after element
 }
 
 /* Videos Blogs Snippets */
+.imac {
+  width: 405px;
+  height: 300px;
+}
 
-
+@media (max-width: 375px) {
+  .imac {
+    width:220px;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
 
