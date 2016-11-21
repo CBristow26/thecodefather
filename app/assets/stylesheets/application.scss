@@ -205,3 +205,65 @@
   }    
 }
 
+
+
+
+
+
+
+
+
+
+/* Hero */
+/* --- General Pen Styles --- */
+body{
+    font-family: Georgia, serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+}
+h1{
+    font-size: 50px;
+    line-height: 1.125;
+}
+.content{
+    margin: 0 auto;
+    max-width: 90%;
+    width: 720px;
+}
+main{
+    padding: 1em 0;
+    position: relative;
+    background: #f5f5f5;
+    box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
+}
+
+/* --- My Altered Classes --- */
+.main2{
+    padding: 1em 0;
+    position: relative;
+    background: #f5f5f5;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+
+.content2{
+    margin: 0 auto;
+    max-width: 90%;
+    width: 720px;
+}
+
+
+
+
+/* --- Important Pen Styles --- */
+
+.zoom{
+    overflow: hidden;
+    padding-bottom: 55%;
+}
+.zoom img{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
