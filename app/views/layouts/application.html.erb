@@ -15,23 +15,70 @@
 
 <header>
 
-<a href="#" id="logo"></a>
 
-<nav>
-<a href="#" id="menu-icon"></a>
-<ul>
-     <li><%= link_to "Home", root_path %></li>
-     </li>
-     <li><%= link_to "Videos", '#' %>
-     </li>
-     <li><%= link_to "Blog", '#' %>
-     </li>
-     <li><%= link_to "Snippets", '#' %>
-     </li>
-     <li><%= link_to "Forum", '#' %>
-     </li>
-</ul>
-</nav>
+<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+      <div class="[ container ]">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="[ navbar-header ]">
+        <button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="[ sr-only ]">Toggle navigation</span>
+          <span class="[ icon-bar ]"></span>
+          <span class="[ icon-bar ]"></span>
+          <span class="[ icon-bar ]"></span>
+        </button>
+        <div class="[ animbrand ]">
+          <a class="[ navbar-brand ][ animate ]" href="#">TheCodeFather</a>
+        </div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+        <ul class="[ nav navbar-nav navbar-right ]">
+          <li class="[ visible-xs ]">
+           <!--
+            <form action="http://bootsnipp.com/search" method="GET" role="search">
+              <div class="[ input-group ]">
+                <input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
+                <span class="[ input-group-btn ]">
+                  <button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
+                  <button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+                </span>
+              </div>
+            </form>
+            -->
+          </li>
+          <li><%= link_to 'Home', '#', class: "animate"%></li>
+          <li><%= link_to 'Videos', '#', class: "animate"%></li>
+          <li><%= link_to 'Blog', '#', class: "animate"%></li>
+          <li><%= link_to 'Snippets', '#', class: "animate"%></li>
+    </div>
+  </nav>
+<script>$(function() { 
+
+    $('a[href="#toggle-search"], .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+    event.preventDefault();
+    $('.navbar-bootsnipp .bootsnipp-search .input-group > input').val('');
+    $('.navbar-bootsnipp .bootsnipp-search').toggleClass('open');
+    $('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+    if ($('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+      /* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+      setTimeout(function() { 
+        $('.navbar-bootsnipp .bootsnipp-search .form-control').focus();
+      }, 100);
+    }     
+  });
+
+  $(document).on('keyup', function(event) {
+    if (event.which == 27 && $('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+      $('a[href="#toggle-search"]').trigger('click');
+    }
+  });
+    
+});</script>
+
+
+
 
 </header>
 </body>
@@ -43,7 +90,3 @@
 
 
 
-<!--
-<ul class="nav navbar-nav navbar-left">
-
-</ul> -->
