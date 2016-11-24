@@ -5,9 +5,8 @@ Rails.application.routes.draw do
   	resources :comments
   end
   root "posts#index"
-  
 
+  resource :dashboard, only: [:show]
 
-  get 'videos/videos'
 
 end
