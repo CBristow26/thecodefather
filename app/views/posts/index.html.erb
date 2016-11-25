@@ -13,3 +13,5 @@
 		<p class="date"><%= post.created_at.strftime("%B, %d %Y") %></p>
 	</div>
 <% end %>
+
+<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
