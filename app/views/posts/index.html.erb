@@ -1,5 +1,4 @@
 <!-- Hero Image > -->
-
 <div class="hero">
     <div class="hero_spacer">
         <img src="assets/hero.jpg" class="hero2" />
@@ -11,7 +10,30 @@
 	<div class="post_wrapper">
 		<h2 class="title"><%= link_to post.title, post %></h2>
 		<p class="date"><%= post.created_at.strftime("%B, %d %Y") %></p>
+		<%= image_tag post.image.url(:medium) %>
 	</div>
 <% end %>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Paginates Blog Posts-->
 <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>

@@ -1,6 +1,10 @@
+<%= image_tag @post.image.url(:large) %>
+
 <h1 class="title">
 	<%= @post.title %>
 </h1>
+
+
 
 <p class="date">
 	Submitted <%= time_ago_in_words(@post.created_at) %> Ago

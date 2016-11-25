@@ -42,3 +42,4 @@ gem 'rails_12factor', group: :production
 gem 'devise', '~> 3.3.0'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
+gem "paperclip", "~> 4.2"
