@@ -2,13 +2,17 @@
 <html>
 <head>
   <title>Thecodefather</title>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><!--<![endif]-->
 
 </head>
 
@@ -48,8 +52,8 @@
             </form>
             -->
           </li>
-          <li><%= link_to 'Home', '#', class: "animate"%></li>
-          <li><%= link_to 'Videos', '#', class: "animate"%></li>
+          <li><%= link_to 'Home', root_path, class: "animate"%></li>
+          <li><%= link_to 'Videos', videos_videos_path, class: "animate"%></li>
           <li><%= link_to 'Blog', '#', class: "animate"%></li>
           <li><%= link_to 'Snippets', '#', class: "animate"%></li>
             <% if user_signed_in? %>

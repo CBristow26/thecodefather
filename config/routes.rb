@@ -8,5 +8,5 @@ Rails.application.routes.draw do
 
   resource :dashboard, only: [:show]
 
-
+  get 'videos/videos'
 end

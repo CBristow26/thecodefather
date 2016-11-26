@@ -1,5 +1,7 @@
+<br><br>
+<div align="center">
 <%= image_tag @post.image.url(:large) %>
-
+<div id="post_content">
 <h1 class="title">
 	<%= @post.title %>
 </h1>
@@ -24,4 +26,6 @@
 
 	<h3>Add a comment:</h3>
 	<%= render "comments/form"%>
+	</div>
+</div>
 </div>

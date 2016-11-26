@@ -5,13 +5,23 @@
     </div>
 </div> 
 
+
+
+
+
+
 <!-- Posts -->
 <div class="postrow col-lg-12" align="center">
 	<% @posts.each do |post| %>
 		<div class="post_wrapper col-lg-4 col-md-6 col-sm-6 col-xs-12 "
 		style="padding-left: 0px; padding-right: 0px;">
 			<div class="postspace"><br><br><br>
+
+
+
+
 				<%= image_tag post.image.url(:medium) %>
+
 
 <!-- Truncate so don't rearrange posts -->				
 				<h2 class="title2"><%= link_to post.title.truncate(15, omission: '...'), post %></h2>
@@ -24,6 +34,9 @@
 		</div>
 	<% end %>
 </div>
+
+
+
 
 
 <!-- Paginates Blog Posts-->
