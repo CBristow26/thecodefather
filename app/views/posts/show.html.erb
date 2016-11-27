@@ -1,27 +1,31 @@
 <br><br><br><br>
 
-<div align="center">
-<%= image_tag @post.image.url(:large) %>
-<div id="post_content">
-<h1 class="title">
-	<%= @post.title %>
-</h1>
+<div class="col-lg-8">
+	<div align="center">
+		<%= image_tag @post.image.url(:large) %>
+	</div>
+		<div id="post_content">
+			<h1 class="title">
+			<%= @post.title %>
+			</h1>
 
 
-<p class="date">
-	Submitted <%= time_ago_in_words(@post.created_at) %> Ago
-	<% if user_signed_in? %>
-		| <%= link_to 'Edit', edit_post_path(@post) %>
-		| <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
-	<% end %>
-</p>
+			<p class="date">
+			Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+			<% if user_signed_in? %>
+				| <%= link_to 'Edit', edit_post_path(@post) %>
+				| <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% end %>
+			</p>
 
-<p class="body">
-	<%= markdown @post.body %>
-</p>
+			<p class="body">
+				<%= markdown @post.body %>
+			</p>
 
 
-</div>
-	<%= render 'disqus' %>
+		</div>	
+
+<%= render 'disqus' %>
+
 </div>
 
