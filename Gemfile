@@ -45,3 +45,5 @@ gem 'will_paginate-bootstrap'
 gem "paperclip", "~> 4.2"
 gem 'friendly_id', '~> 5.1.0'
 gem 'aws-sdk', '~> 1.6'
+gem 'pygments.rb', '~> 0.6.0'
+gem 'redcarpet', '~> 3.2.2'

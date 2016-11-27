@@ -17,10 +17,11 @@
 </p>
 
 <p class="body">
-	<%= @post.body %>
+	<%= markdown @post.body %>
 </p>
 
 
 </div>
 	<%= render 'disqus' %>
 </div>
+
