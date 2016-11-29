@@ -1,16 +1,17 @@
 <br><br><br><br>
 
-<div class="col-lg-8">
+<div class="col-xs-10 col-xs-offset-1">
+
 	<div align="center">
 		<%= image_tag @post.image.url(:large) %>
 	</div>
 		<div id="post_content">
-			<h1 class="title">
+			<h1 class="title" align="center">
 			<%= @post.title %>
 			</h1>
 
 
-			<p class="date">
+			<p class="date" align="center">
 			Submitted <%= time_ago_in_words(@post.created_at) %> Ago
 			<% if user_signed_in? %>
 				| <%= link_to 'Edit', edit_post_path(@post) %>
@@ -25,7 +26,13 @@
 
 		</div>	
 
-<%= render 'disqus' %>
 
 </div>
+
+
+<div class="col-xs-10 col-xs-offset-1">
+<br><br><br>
+<%= render 'disqus' %>
+</div>
+
 
