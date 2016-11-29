@@ -22,6 +22,7 @@ end
 
 	def show
 		@post = Post.friendly.find(params[:id])
+		@posts = Post.includes(:comments).order("created_at DESC").limit(5)
 	end
 
 	def edit

@@ -1,6 +1,15 @@
 <br><br><br><br>
 
-<div class="col-xs-10 col-xs-offset-1">
+
+
+
+
+
+
+
+
+
+<div class="col-xs-8 col-xs-offset-1">
 
 	<div align="center">
 		<%= image_tag @post.image.url(:large) %>
@@ -30,9 +39,23 @@
 </div>
 
 
+
+<h1 class="col-xs-3" style="padding-right: 155px;" align="center"> Recent Articles </h1>
+<div class="recent col-xs-3" align="left" style="padding-left: 70px;">
+<% @posts.each do |post| %>
+<div class="postspace"><br>
+<h2 class="title2"><%= link_to post.title.truncate(15, omission: '...'), post %></h2>
+<%= image_tag post.image.url(:thumbnail) %>
+<p class="date"><%= post.created_at.strftime("%B, %d %Y") %></p>
+</div>
+<% end %>
+</div>
+
+
+
+
+
 <div class="col-xs-10 col-xs-offset-1">
 <br><br><br>
 <%= render 'disqus' %>
 </div>
-
-
