@@ -526,7 +526,16 @@ a {
 }
 
 
+.showcolor {
+  background-color: black;
+  color: white;
+}
 
+@media (max-width: 992px) {
+  .recent {
+    display: none;
+  }
+}
 
 
 
