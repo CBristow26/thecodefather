@@ -42,15 +42,25 @@
 
 
 <!-- Recent Articles -->
+
+<div class="blogborder">
 	<div class="recent col-xs-3" align="left" style="padding-left: 70px;">
+<h3 class="recenttitle"> Recent Articles </h3>
 		<% @posts.each do |post| %>
-		<div class="postspace"><br>
-		<h2 class="title2"><%= link_to post.title.truncate(14, omission: '...'), post %></h2>
-		<%= image_tag post.image.url(:thumbnail) %>
-		<p class="date"><%= post.created_at.strftime("%B, %d %Y") %></p>
+
+		<div class="postspace" align="center"><br><br>
+
+		<h2 class="title3">
+
+		<%= link_to post.title.truncate(14, omission: '...'), post %></h2>
+		<%= image_tag post.image.url(:thumbnail), :class => "thumbmove" %>
+		<p class="date datemove"><%= post.created_at.strftime("%B, %d %Y") %></p>
 	</div>
 <% end %>
 </div>
+</div>
+
+
 
 
 
