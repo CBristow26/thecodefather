@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get 'videos/videos'
   get 'homepage/about'
+  
+  resources :contacts, only: [:new, :create]
 end
