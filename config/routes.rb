@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resource :dashboard, only: [:show]
 
   get 'videos/videos'
+  get 'homepage/about'
 end
