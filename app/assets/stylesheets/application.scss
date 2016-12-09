@@ -618,6 +618,17 @@ input[type=email] {
   }
 }
 
+
+
+.footer {
+    position:relative;
+    height:75px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
+
 /* Pagination */
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
     z-index: 3;
