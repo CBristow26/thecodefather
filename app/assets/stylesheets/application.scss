@@ -244,6 +244,14 @@
   }
 }
 
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero2 {
+    padding-top: 100px;
+  }
+}
+
 /* Post Row */
 .title2 {
   font-size: 24px;
@@ -638,3 +646,7 @@ input[type=email] {
     border: 1px solid #ddd;
     margin-left: -1px;
 }
+
+
+
+
