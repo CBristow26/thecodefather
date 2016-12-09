@@ -23,31 +23,28 @@
 <hr>
 	<div class="col-lg-4" align="center">
 		<h1>Contact For Business Inquiries</h1>
+		<%= form_for Contact.new do |f| %>
+			<%= f.label :name %><br>
+			<%= f.text_field :name, required: true %>
 
+			<br>
 
+			<%= f.label :email %><br>
+			<%= f.email_field :email, required: true %>
 
-	<%= form_for Contact.new do |f| %>
-		<%= f.label :name %><br>
-		<%= f.text_field :name, required: true %>
+			<br>
 
+			<%= f.label :message %><br>
+			<%= f.text_area :message, as: :text %>
+
+			<div class="hidden">
+				<%= f.label :nickname %><br>
+				<%= f.text_field :nickname, hint: 'leave this field blank' %>
+			</div>
+			<br>
+			<%= f.submit 'Send Message', class: "button" %>
+		<% end %>
 		<br>
-
-		<%= f.label :email %><br>
-		<%= f.email_field :email, required: true %>
-
-		<br>
-
-		<%= f.label :message %><br>
-		<%= f.text_area :message, as: :text %>
-
-		<div class="hidden">
-			<%= f.label :nickname %><br>
-			<%= f.text_field :nickname, hint: 'leave this field blank' %>
-		</div>
-		<br>
-		<%= f.submit 'Send Message', class: "button" %>
-	<% end %>
-	<br>
 	</div>
 
 
